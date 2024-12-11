@@ -4,7 +4,7 @@ export default function Projects() {
 
   
     return (
-      <div className="font-bold text-sm p-4">
+      <div className="font-bold text-sm p-4s custom-cursor-area">
           <ProjectPage/>
       </div>
     );

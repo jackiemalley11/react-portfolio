@@ -6,7 +6,7 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 export default function ProjectPage() {
     return (
-        <div className=' bg-bgBlue text-white min-h-screen'>
+        <div className=' bg-bgBlue text-white min-h-screen custom-cursor-area'>
             <div className="relative">
                 <img src="/images/MenuBarFlower.png" className="w-1/4"
                 />
