@@ -10,11 +10,12 @@
     "production": "next build && next start"
   },
   "dependencies": {
+    "@fontsource/raleway": "^5.1.0",
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "mongo": "^0.1.0",
-    "next": "14.1.4",
+    "next": "^15.1.0",
     "react": "^18",
     "react-dom": "^18",
     "tailwindcss-textshadow": "^2.1.3"
