@@ -7,24 +7,24 @@ export function Landing() {
                 <img src="/images/FlowerNamePartial.png"  className="absolute bottom-0 left-0 w-2/3 sm:w-2/3 md:w-2/3 lg:w-1/2 object-cover"
                 />
 
-                <div className="absolute bottom-50 left-1/3 space-y-20 text-shadow-glow">
+                <div className="absolute bottom-50 left-1/3 space-y-20">
                     <div>
-                        <Link href="/projects" className="text-3xl text-shadow-glow hover:text-hoverBlue hover:hover-custom-cursor">  
+                        <Link href="/projects" className="text-3xl hover-glow hover:text-hoverBlue hover:hover-custom-cursor">  
                             PROJECTS        
                         </Link>
                     </div>
                     <div className="ml-20">
-                        <Link href="/experience" className="text-3xl text-shadow-glow hover:text-hoverBlue">  
+                        <Link href="/experience" className="text-3xl hover-glow hover:text-hoverPurple">  
                             EXPERIENCE        
                         </Link>
                     </div>
                     <div className="ml-32">
-                        <Link href="/aboutMe" className="text-3xl text-shadow-glow hover:text-hoverBlue">  
+                        <Link href="/aboutMe" className="text-3xl hover-glow hover:text-hoverPink">  
                             ABOUT ME        
                         </Link>
                     </div>
                     <div className="ml-40">
-                        <Link href="/contactMe" className="text-3xl text-shadow-glow hover:text-hoverBlue">  
+                        <Link href="/contactMe" className="text-3xl hover-glow hover:text-hoverYellow">  
                             CONTACT       
                         </Link>
                     </div>

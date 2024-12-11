@@ -11,5 +11,17 @@
 }
 
 a {
-    cursor: url('/images/beePointer.png'), auto !important;
+    cursor: url('/images/beePointer.png'), auto;
+}
+
+.hover-glow {
+    color: white; 
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.hover-glow-title {
+    color: white; 
+    text-shadow: 0 0 50px #fff;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
 }

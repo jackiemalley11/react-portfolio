@@ -11,10 +11,14 @@ const config: Config = {
       colors: {
         bgBlue: '#172442',
         hoverBlue: '#40F6FC',
+        hoverPurple: '#817DE9',
+        hoverPink: '#E92DBA',
+        hoverYellow: '#ECF083'
       },
-      boxShadow: {
-        'text-glow': '0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6)',
-      }
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
+
     },
   },
   plugins: [
