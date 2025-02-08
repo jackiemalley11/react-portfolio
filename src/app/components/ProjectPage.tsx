@@ -39,33 +39,12 @@ export default function ProjectPage() {
                 </div>
                 <div className=" flex flex-col w-1/4 flex-grow min-w-[250px] bg-white mb-2 text-[#00283b] mt-4 relative mr-2 cursor-pointer">
 
-                    <div className='text-5xl text-center mb-2'>JAVA</div>
+                    <div className='text-5xl text-center mb-2'>ASP.NET Core</div>
 
-                    <img className="text-xl" src="/images/javaFermi.png" alt="fermi game" />
-
-                </div>
-                <div className=" flex flex-col w-1/4 flex-grow min-w-[250px] bg-white mb-2 text-[#00283b] mt-4 relative mr-2 cursor-pointer">
-
-                    <div className='text-5xl text-center mb-2'>CMS-GOOGLE SITES</div>
-
-                    <img className="text-xl" src="/images/alaswinew.png" alt="Alaswinew website" />
+                    <img className="text-xl" src="/images/productReview.png" alt="product review" />
 
                 </div>
-                <div className="flex flex-col w-1/4 flex-grow min-w-[250px] bg-white mb-2 text-[#00283b] mt-4 relative mr-2 cursor-pointer">
-
-                    <div className='text-5xl text-center mb-2'>ASP.NET CORE</div>
-
-                    <img className="text-xl" src="/images/quoteGenerator.png" alt="quote generator" />
-
-                </div>
-                <div className=" flex flex-col w-1/4 flex-grow min-w-[250px] bg-white mb-2 text-[#00283b] mt-4 relative mr-2 cursor-pointer">
-
-                    <div className='text-5xl text-center mb-2'>CMS-Wordpress</div>
-
-                    <img className="text-xl" src="/images/Wordpress.png" alt="Wordpress portfolio" />
-
-                </div>
-
+                
             </div>
         </div>
     );

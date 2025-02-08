@@ -20,8 +20,25 @@ const config: Config = {
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],
+      },
+      transformStyle: {
+        'preserve-3d': 'preserve-3d',
+      },
+      backfaceVisibility: {
+        'hidden': 'hidden',
+      },
+      rotate: {
+        'y-180': 'rotateY(180deg)',
+      },
+      perspective: {
+        'DEFAULT': '1000px',
       },    
 
+    },
+  },
+  variants: {
+    extend: {
+      transform: ['group-hover'],
     },
   },
   plugins: [
