@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ProjectsProvider } from "@/context/ProjectsContext";
 
 export const metadata: Metadata = {
   title: "boilerplate-nextjs-mongo",
@@ -9,10 +10,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }:Readonly<{ children: React.ReactNode }>) {
 
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
+    <ProjectsProvider>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </ProjectsProvider>
   );
 }

@@ -25,3 +25,8 @@
     text-shadow: 0 0 50px #fff;
     transition: text-shadow 0.3s ease, color 0.3s ease;
 }
+
+iframe::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+  }
