@@ -1,12 +1,75 @@
-import ExperiencePage from '../components/experiencePage'
+import React from 'react';
+import Navbar from '../../components/navBar';
+import FlipCard, { CardContent } from '../../components/flipCard';
+import { getExperience } from "@/tools/DataManager";
+import { Experience } from "@/tools/data.model";
 
-export default function Experience() {
+export default async function ExperiencePage() {
+  const xpdata = await getExperience();
+  const experiences: Experience[] = xpdata.experience;
 
-  
-    return (
-      <div className="font-bold text-sm p-4">
-          <ExperiencePage/>
-      </div>
-    );
+  // Transform database content into FlipCard content
+  const flipCardContent: CardContent[] = experiences.map(exp => {
+    let backContent;
     
-  }
+    // Special handling for Independent section with links
+    if (exp.front === "Independent") {
+      backContent = (
+        <div className='m-4 text-xl'>
+          In the past year I developed two different sites using Google's CMS. 
+          The first was on a volunteer basis for the{' '}
+          <a 
+            className='text-[#40F6FC] hover:text-[#B5EEF0] hover:shadow-[0_0_10px_2px_rgba(64, 246, 252, 0.8)]'
+            href="https://sites.google.com/view/ehcurlingassociation/home" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            East Hants Curling Association
+          </a>.{' '}
+          {exp.back.split('East Hants Curling Association')[1].split('Alaswinew.com')[0]}
+          <a 
+            className='text-[#40F6FC] hover:text-[#B5EEF0] hover:shadow-[0_0_10px_2px_rgba(64, 246, 252, 0.8)]'
+            href="https://www.alaswinew.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Alaswinew.com
+          </a>
+          {exp.back.split('Alaswinew.com')[1]}
+        </div>
+      );
+    } else {
+      
+      backContent = <div className='m-4 text-xl'>{exp.back}</div>;
+    }
+
+    return {
+      front: exp.front,
+      back: backContent
+    };
+  });
+
+  return (
+    <div className='bg-bgBlue text-white min-h-screen custom-cursor-area md:text-lg lg:text-xl font-raleway'>
+      <div className="relative">
+        <img src="/images/MenuBarFlower.png" alt="Menu Bar Flower" className="w-1/3" />
+      </div>
+      <Navbar />
+      <div className="relative flex justify-center items-center">
+        <div className="relative text-7xl hover-glow-title">
+          Experience
+        </div>
+      </div>
+      <div className="flex flex-wrap justify-evenly mt-10">
+        {experiences && experiences.length > 0 ? (
+          flipCardContent.map((content, index) => (
+            <FlipCard key={index} content={content} />
+          ))
+        ) : (
+          <p>No experience found</p>
+        )}
+      </div>
+     
+    </div>
+  );
+}

@@ -1,4 +1,8 @@
-export interface Projects {
+export interface ProjectData{
+    projects: Project[];
+}
+
+export interface Project {
     _id:         string;
     name:        string;
     description: string;
@@ -12,3 +16,5 @@ export interface Experience {
     back: string;
 
 }
+
+

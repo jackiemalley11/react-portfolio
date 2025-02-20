@@ -1,16 +1,21 @@
-import { getProjects } from "@/tools/DataManager";
-import { Projects } from "@/tools/data.model";
+import { getExperience, getProjects } from "@/tools/DataManager";
+import { Project, Experience } from "@/tools/data.model";
 import { Landing } from "./Landing";
+import ProjectPage from "./projects/page";
+import ProjectsDisplay from "@/components/projectsDisplay";
 
 export default async function Home() {
 
-  const data = await getProjects(); 
-  const projects : Projects[] = data.projects;
+let { projects } = await getProjects();
+
+const xpdata = await getExperience();
+const experience : Experience[] = xpdata.experience;
   
 
   return (
     <div className="bg-bgBlue min-h-screen">
-      <Landing projects={projects}/>
+      <Landing/>
+
     </div>
   );
   
