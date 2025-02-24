@@ -14,6 +14,33 @@
     cursor: url('/images/beePointer.png'), auto;
 } */
 
+.gradient-border-round {
+    position: relative;
+    background: linear-gradient(135deg, #40F6FC, #9491DB, #E92DBA, #ECF083);
+    border-style: dotted;
+    padding: 6px;  
+    border-radius: 50%;
+    display: inline-block; 
+  }
+
+  .gradient-border-round img {
+    border-radius: 50%;
+    display: block;
+    background: #172442; 
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #40F6FC, #9491DB, #E92DBA, #ECF083);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: underline;
+  }
+
+.gradient-background {
+    background: linear-gradient(135deg, #40F6FC, #9491DB, #E92DBA, #ECF083);
+  }
+
 .gradient-border {
     border: 4px solid;
     border-image: linear-gradient(135deg, #40F6FC, #9491DB, #E92DBA, #ECF083) 1;

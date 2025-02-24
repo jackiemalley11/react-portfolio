@@ -11,17 +11,15 @@ export default async function ProjectPage() {
 
   return (
     <div className="bg-bgBlue text-white min-h-screen custom-cursor-area md:text-xl lg:text-2xl font-raleway">
-      <div className="relative">
-        <img src="/images/menuFlower.png" alt="Menu Bar Flower" />
+      <div className="flex flex-col">
+        <Navbar />
+
+        <div className="relative flex justify-center items-center mb-10 pt-48">
+          <div className="relative text-7xl hover-glow-title">PROJECTS</div>
+        </div>
+
+        <ProjectsDisplay projects={projects}/>
       </div>
-
-      <Navbar />
-
-      <div className="relative flex justify-center items-center mb-10">
-        <div className="relative text-7xl hover-glow-title">PROJECTS</div>
-      </div>
-
-      <ProjectsDisplay projects={projects}/>
 
       
     </div>

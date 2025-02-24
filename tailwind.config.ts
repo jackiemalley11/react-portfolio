@@ -16,7 +16,7 @@ const config: Config = {
         hoverYellow: '#ECF083'
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-custom': 'linear-gradient(135deg, #40F6FC, #9491DB, #E92DBA, #ECF083)', // Define custom gradient background
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],
@@ -32,10 +32,19 @@ const config: Config = {
       },
       perspective: {
         'DEFAULT': '1000px',
-      },    
-
-    },
-  },
+      },
+      animation: {
+        slideIn: 'slideIn 1s ease-out'
+      },
+      keyframes: {
+        slideIn: {
+          '0%': { transform: 'translateX(300px)', opacity: '0.5' },
+          '100%': { transform: 'translateX(0)', opacity: '1' }
+        }
+      }
+    }, 
+  },   
+  
   variants: {
     extend: {
       transform: ['group-hover'],

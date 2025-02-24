@@ -27,7 +27,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ content }) => {
   return (
     <div
       onClick={handleClick}
-      className="w-[30%] h-96 perspective-[1000px] cursor-pointer transition-transform duration-500 group"
+      className="w-full md:w-[30%] h-96 perspective-[1000px] cursor-pointer transition-transform duration-500 group"
     >
       <div
         className={`
@@ -44,7 +44,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ content }) => {
             ${isFlipped ? 'hidden' : ''}
           `}
         >
-          <div className="text-4xl text-center mb-2 mt-2">{content.front}</div>
+          <div className="text-4xl md:text-3xl lg:text-4xl text-center mb-2 mt-2">{content.front}</div>
         </div>
         
         {/* Back of card */}

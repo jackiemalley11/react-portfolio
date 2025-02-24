@@ -19,7 +19,7 @@ export default async function ExperiencePage() {
           In the past year I developed two different sites using Google's CMS. 
           The first was on a volunteer basis for the{' '}
           <a 
-            className='text-[#40F6FC] hover:text-[#B5EEF0] hover:shadow-[0_0_10px_2px_rgba(64, 246, 252, 0.8)]'
+            className='text-[#40F6FC] hover:text-[#B5EEF0] hover:shadow-[0_0_10px_2px_rgba(64, 246, 252, 0.8)] '
             href="https://sites.google.com/view/ehcurlingassociation/home" 
             target="_blank" 
             rel="noopener noreferrer"
@@ -50,26 +50,22 @@ export default async function ExperiencePage() {
   });
 
   return (
-    <div className='bg-bgBlue text-white min-h-screen custom-cursor-area md:text-lg lg:text-xl font-raleway'>
-      <div className="relative">
-        <img src="/images/MenuBarFlower.png" alt="Menu Bar Flower" className="w-1/3" />
-      </div>
-      <Navbar />
-      <div className="relative flex justify-center items-center">
-        <div className="relative text-7xl hover-glow-title">
-          Experience
+    <div className="bg-bgBlue text-white min-h-screen custom-cursor-area md:text-xl lg:text-2xl font-raleway">
+      <div className="flex flex-col">
+        <Navbar />
+        <div className="relative flex justify-center items-center mb-10 pt-48">
+          <div className="relative text-7xl hover-glow-title">EXPERIENCE</div>
+        </div>
+        <div className="grid grid-cols-1 gap-4 px-6 w-full md:flex md:flex-row md:justify-evenly mt-10">
+          {experiences && experiences.length > 0 ? (
+            flipCardContent.map((content, index) => (
+              <FlipCard key={index} content={content} />
+            ))
+          ) : (
+            <p>No experience found</p>
+          )}
         </div>
       </div>
-      <div className="flex flex-wrap justify-evenly mt-10">
-        {experiences && experiences.length > 0 ? (
-          flipCardContent.map((content, index) => (
-            <FlipCard key={index} content={content} />
-          ))
-        ) : (
-          <p>No experience found</p>
-        )}
-      </div>
-     
     </div>
   );
 }
