@@ -17,10 +17,10 @@ export default function AboutMe() {
                         <span >Hi! I'm &nbsp;</span>
                         <span className="gradient-text">Jackie </span>
                         <span>,  &nbsp;</span>
-                        <span className="animate-slideIn opacity-0 [animation-fill-mode:forwards] mr-2"> Thank you for stopping by!</span>
+                        <span className="animate-slideIn opacity-0 [animation-fill-mode:forwards] mr-2"> Thank you for dropping by!</span>
                     </div>
                 </div>
-                <div className='flex flex-col lg:flex-row ms-20 me-20'>
+                <div className='flex flex-col lg:flex-row ml-24'>
                     <div className="flex-2 flex justify-start mt-10 lg:mt-20 ">
                         I am currently a student in IT - Web Programming at NSCC's Truro campus and looking forward to graduating spring of 2025.
                         I previously had a 14 year career  in the payroll industry where I held positions in customer serivce, programming and management.
@@ -31,10 +31,10 @@ export default function AboutMe() {
                         <br></br><br></br>
                         You'll find my social links below.  I'd love to hear from you and learn what brought you to my page.
                     </div>
-                    <div className="mt-10 me-10">
+                    <div className="mt-10 me-5">
                         <img
-                            src="/images/headshot2.jpg"
-                            className="gradient-border-round w-1/2 lg:w-full"
+                            src="/images/FlowerHeadShot.png"
+                            // className="gradient-border-round w-1/2 lg:w-full"
                         />
                     </div>
                 </div>

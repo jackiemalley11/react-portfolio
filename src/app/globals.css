@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .custom-cursor-area {
-    cursor: url('/images/beePointer.png'), auto;
-} */
-
-/* .hover-custom-cursor {
-    cursor: url('/images/beePointer.png'), auto; 
-} */
-
-/* a {
-    cursor: url('/images/beePointer.png'), auto;
-} */
 
 .gradient-border-round {
     position: relative;
