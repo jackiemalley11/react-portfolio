@@ -26,15 +26,33 @@ db.experience.drop();
 
 db.experience.insert([
   {
-    front: "Industry",
-    back: "I was thrilled to have the opportunity to work with and learn from the talented developers at Innovasea this past summer. I gained experience with the Angular framework and acquired integral industry experience working with GitHub in a team environment. During my time with Innovasea I participated in weekly standups, supported the introduction of additional lint checks for quality control, transitioned an old datetime library, and started a new page for future integration into the application."
+    front: "Web Development",
+    back: ["Innovasea Summer Student/Software Engineering:", "Updated code base and implemented additional ESLint checking in GitHub platform to improve overall quality control of code." 
+      , "Employed research and JavaScript skills to remove old Datetime library from code base and replace with more modern library."
+      , "Using Angular framework, designed and coded a customer support page which required the display of multi-language documentations based on locale"
+    ]
   },
   {
-    front: "Independent",
-    back: "In the past year I developed two different sites using Google's CMS. The first was on a volunteer basis for the East Hants Curling Association. I updated the existing site creating a public-facing side and a members-only section. This site is an ongoing project and will be undergoing further development at the end of the curling season. I also developed Alaswinew.com to support the opening of a new Veterinary Locum business."
+    front: "Freelance",
+    back: ["East Hants Curling Association Website:", "Optimized and restructured the East Hants Curling Association's Google Site, creating a dual-site structure and providing training for ongoing maintenance."
+      , "Alaswinew Veterinary Locum Website:", "Designed and launched a Google Site integrated with Squarespace for live hosting, ensuring seamless user experience and responsive design."
+    ]
   },
   {
-    front: "Cross Functional",
-    back: "Prior to making the switch to Web Development I held a 14-year career in the payroll industry. I worked for ADP, a large global national corporation, where I was first exposed to the world of programming. During my time I also held roles in customer service and leadership. I enjoy working with people as well as technology and developed the ability to translate client requests into code and communicate system functionality back to clients."
+    front: "Leadership",
+    back: ["ADP:", "Led and managed numerous associate teams across in-person, hybrid, and virtual environments.", "Facilitated team meetings and one-on-one coaching sessions to drive development and training."
+      , "Mentored emerging leaders and trained new managers."
+      , "Conducted STAR-model interviews to hire top candidates and build a cohesive team"
+      ,	"Analyzed data, allocated workloads, and managed staffing to ensure timely, accurate payroll completion."
+      ]
+  },
+  {
+    front: "Customer Service",
+    back: ["ADP:", "Researched, developed and implemented client-focused coding solutions to resolve internal cases.", 
+      "Delivered lunch and learn sessions, developed associate job aids to reduce overall wait time on phone queues by sharing knowledge.",
+      "Wrote internal programming code to update and create new features in client’s existing payroll setup.",  
+      "Managed a portfolio of clients, providing timely and professional service by phone/ e-mail. Oversaw long-term projects and managed casework"
+      
+      ]
   }
 ]);

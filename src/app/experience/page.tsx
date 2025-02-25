@@ -11,7 +11,7 @@ export default async function ExperiencePage() {
   // Transform database content into FlipCard content
   const flipCardContent: CardContent[] = experiences.map(exp => {
     let backContent;
-    
+
     // Special handling for Independent section with links
     if (exp.front === "Independent") {
       backContent = (
@@ -26,7 +26,7 @@ export default async function ExperiencePage() {
           >
             East Hants Curling Association
           </a>.{' '}
-          {exp.back.split('East Hants Curling Association')[1].split('Alaswinew.com')[0]}
+          {exp.back.join(' ').split('East Hants Curling Association')[1].split('Alaswinew.com')[0]}
           <a 
             className='text-[#40F6FC] hover:text-[#B5EEF0] hover:shadow-[0_0_10px_2px_rgba(64, 246, 252, 0.8)]'
             href="https://www.alaswinew.com" 
@@ -35,12 +35,20 @@ export default async function ExperiencePage() {
           >
             Alaswinew.com
           </a>
-          {exp.back.split('Alaswinew.com')[1]}
+          {exp.back.join(' ').split('Alaswinew.com')[1]}
         </div>
       );
     } else {
-      
-      backContent = <div className='m-4 text-xl'>{exp.back}</div>;
+      // For other experiences, map through back content with custom styles
+      backContent = (
+        <div className='m-4 text-xl'>
+          {exp.back.map((item, index) => (
+            <p key={index} className={item.includes(':') ? 'font-bold underline mt-3' : 'font-extralight mt-3'}>
+              {item.includes(':') ? item : `• ${item}`}
+            </p>
+          ))}
+        </div>
+      );
     }
 
     return {

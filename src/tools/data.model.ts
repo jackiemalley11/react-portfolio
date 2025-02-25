@@ -13,7 +13,7 @@ export interface Project {
 export interface Experience {
     _id:         string;
     front:        string;
-    back: string;
+    back: [];
 
 }
 
