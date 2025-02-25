@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes, faHouse } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center py-4 px-2">
         {/* Logo/Brand section - pushed to far left */}
         <div className="flex items-center ml-4">
-          <img src="/images/menuFlower.png" alt="Menu Bar Flower" className="w-12" />
+          <Image src="/images/menuFlower.png" alt="Menu Bar Flower" className="w-12"/>
           <span className="gradient-text font-bold ml-4">JACKIE MALLEY</span>
         </div>
 
