@@ -42,7 +42,7 @@ export default async function ExperiencePage() {
       // For other experiences, map through back content with custom styles
       backContent = (
         <div className='m-4 text-xl'>
-          {exp.back.map((item, index) => (
+          {exp.back.map((item: string, index) => (
             <p key={index} className={item.includes(':') ? 'font-bold underline mt-3' : 'font-extralight mt-3'}>
               {item.includes(':') ? item : `• ${item}`}
             </p>
