@@ -16,7 +16,7 @@ export default async function ExperiencePage() {
     if (exp.front === "Independent") {
       backContent = (
         <div className='m-4 text-xl'>
-          In the past year I developed two different sites using Google's CMS. 
+          In the past year I developed two different sites using Google&apos;s CMS. 
           The first was on a volunteer basis for the{' '}
           <a 
             className='text-[#40F6FC] hover:text-[#B5EEF0] hover:shadow-[0_0_10px_2px_rgba(64, 246, 252, 0.8)] '
