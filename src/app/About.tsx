@@ -1,8 +1,8 @@
 "use client"
 
-import Navbar from "../../components/navBar";
+import Navbar from "../components/navBar";
 
-export default function AboutMe() {
+export default function About() {
 
 
     return (
@@ -24,12 +24,12 @@ export default function AboutMe() {
                     <div className="flex-2 flex justify-start mt-10 lg:mt-20 ">
                         I am currently a student in IT - Web Programming at NSCC's Truro campus and looking forward to graduating spring of 2025.
                         I previously had a 14 year career  in the payroll industry where I held positions in customer serivce, programming and management.
-                        I'm a passionate lifelong learner who values diversity, creativity, and wellness in the workplace. I am delighted to be
+                        I am a passionate lifelong learner who values diversity, creativity, and wellness in the workplace. I am delighted to be
                         embarking into the exciting world of software-development.
                         <br></br><br></br>
                         This portfolio is a small sampling of completed projects as well as work currently underway.
                         <br></br><br></br>
-                        You'll find my social links below.  I'd love to hear from you and learn what brought you to my page.
+                         I'd love to hear from you and learn what brought you to my page.
                     </div>
                     <div className="mt-10 me-5">
                         <img

@@ -31,11 +31,8 @@ export default function Navbar() {
           <Link href="/projects" className="hover:text-hoverBlue ml-6 px-4">
             PROJECTS
           </Link>
-          <Link href="/experience" className="hover:text-hoverPurple px-4">
+          <Link href="/experience" className="hover:text-hoverPink px-4">
             EXPERIENCE
-          </Link>
-          <Link href="/aboutMe" className="hover:text-hoverPink px-4 whitespace-nowrap">
-            ABOUT ME
           </Link>
           <Link href="/contactMe" className="hover:text-hoverYellow px-4">
             CONTACT
@@ -53,11 +50,8 @@ export default function Navbar() {
             <Link href="/projects" className="hover:text-hoverBlue">
               PROJECTS
             </Link>
-            <Link href="/experience" className="hover:text-hoverPurple">
+            <Link href="/experience" className="hover:text-hoverPink">
               EXPERIENCE
-            </Link>
-            <Link href="/aboutMe" className="hover:text-hoverPink whitespace-nowrap">
-              ABOUT ME
             </Link>
             <Link href="/contactMe" className="hover:text-hoverYellow">
               CONTACT

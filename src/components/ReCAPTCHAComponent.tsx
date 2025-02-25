@@ -9,7 +9,7 @@ const ReCAPTCHAComponent: React.FC<ReCAPTCHAProps> = ({ onChange }) => {
   const recaptchaRef = useRef<ReCAPTCHA | null>(null);
 
   const handleCaptchaChange = (value: string | null) => {
-    onChange(value); // Pass the token to parent component
+    onChange(value); 
   };
 
   useEffect(() => {

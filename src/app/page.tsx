@@ -1,8 +1,7 @@
 import { getExperience, getProjects } from "@/tools/DataManager";
-import { Project, Experience } from "@/tools/data.model";
-import { Landing } from "./Landing";
-import ProjectPage from "./projects/page";
-import ProjectsDisplay from "@/components/projectsDisplay";
+import { Experience } from "@/tools/data.model";
+import About from "./About"
+import Footer from "@/components/footer";
 
 export default async function Home() {
 
@@ -14,7 +13,8 @@ const experience : Experience[] = xpdata.experience;
 
   return (
     <div className="bg-bgBlue min-h-screen">
-      <Landing/>
+      <About/>
+      <Footer/>
 
     </div>
   );
