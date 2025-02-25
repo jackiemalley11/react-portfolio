@@ -12,9 +12,14 @@ const experience : Experience[] = xpdata.experience;
   
 
   return (
-    <div className="bg-bgBlue min-h-screen">
-      <About/>
-      <Footer/>
+    <div className="bg-bgBlue min-h-screen flex flex-col bg-bgBlue">
+      <div className="flex-grow">
+        <About/>
+      </div>
+      
+      <div>
+        <Footer/>
+      </div>
 
     </div>
   );
