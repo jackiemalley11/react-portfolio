@@ -14,16 +14,16 @@ export default function About() {
             <Navbar></Navbar>
 
             <div className="flex flex-col">
-                <div className="relative justify-center pt-48">
-                    <div className="relative text-3xl md:text-5xl lg:text-6xl hover-glow-title pl-20 pr-20 mt-3 flex flex-wrap justify-center">
+                <div className="relative justify-center pt-32">
+                    <div className="relative text-3xl md:text-5xl lg:text-6xl hover-glow-title pl-20 pr-20 mt-3 flex flex-wrap ">
                         <span >Hi! I&apos;m &nbsp;</span>
                         <span className="gradient-text">Jackie </span>
-                        <span>,  &nbsp;</span>
+                        <span className="inline-block">,  &nbsp;</span>
                         <span className="animate-slideIn opacity-0 [animation-fill-mode:forwards] mr-2"> Thank you for dropping by!</span>
                     </div>
                 </div>
-                <div className='flex flex-col lg:flex-row ml-24 mr-24'>
-                    <div className="flex-2 flex justify-start mt-10 lg:mt-20 ">
+                <div className='flex flex-col lg:flex-row ml-10 mr-10'>
+                    <div className="flex-2 flex justify-start pl-9 mt-10 lg:mt-20 ">
                         I am looking forward to graduating from IT - Web Programming at NSCC&apos;s Truro campus in spring of 2025.
                         I previously had a 14 year professional career in the payroll industry where I held positions in customer serivce, programming and management.
                         I am a passionate lifelong learner who values diversity, creativity, and wellness in the workplace. I am delighted to be

@@ -66,7 +66,7 @@ export default function ContactMe() {
     <div className="bg-bgBlue text-white min-h-screen custom-cursor-area md:text-xl lg:text-2xl font-raleway">
       <div className="flex flex-col">
         <Navbar />
-        <div className="container mx-auto px-4 py-8 mt-48">
+        <div className="container mx-auto px-4 py-8 mt-32">
           <div className="relative flex justify-center items-center mb-10">
             <div className="relative text-5xl md:text-7xl hover-glow-title">CONTACT ME</div>
           </div>

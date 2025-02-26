@@ -14,7 +14,7 @@ export default async function ProjectPage() {
       <div className="flex flex-col">
         <Navbar />
 
-        <div className="relative flex justify-center items-center mb-10 pt-48">
+        <div className="relative flex justify-center items-center mb-6 pt-32">
           <div className="relative text-6xl md:text-7xl hover-glow-title">PROJECTS</div>
         </div>
 

@@ -61,7 +61,7 @@ export default async function ExperiencePage() {
     <div className="bg-bgBlue text-white min-h-screen custom-cursor-area md:text-xl lg:text-2xl font-raleway">
       <div className="flex flex-col">
         <Navbar />
-        <div className="relative flex justify-center items-center mb-10 pt-48">
+        <div className="relative flex justify-center items-center mb-6 pt-32">
           <div className="relative text-6xl md:text-7xl hover-glow-title">EXPERIENCE</div>
         </div>
         <div className="grid grid-cols-1 gap-4 px-6 w-full md:flex md:flex-row md:justify-evenly mt-10">

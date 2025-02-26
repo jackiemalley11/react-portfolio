@@ -11,9 +11,8 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 w-full bg-bgBlue z-50">
-      {/* Container for the entire navbar with edge-to-edge layout */}
       <div className="flex justify-between items-center py-4 px-2">
-        {/* Logo/Brand section - pushed to far left */}
+       
         <div className="flex items-center ml-4">
           <Image src="/images/menuFlower.png" alt="Menu Bar Flower" width={50} height={50}/>
           <span className="gradient-text font-bold ml-4">JACKIE MALLEY</span>

@@ -53,7 +53,7 @@ export default function ProjectsDisplay({ projects }: { projects: Project[]}) {
 
       {/* Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-5">
           <div className="bg-white p-4 rounded-lg relative w-[80%]">
             <button
               onClick={() => setSelectedProject(null)}
@@ -61,7 +61,7 @@ export default function ProjectsDisplay({ projects }: { projects: Project[]}) {
             >
               Close
             </button>
-            <div className="aspect-video relative">
+            <div className="aspect-video relative mt-4">
               <iframe
                 src={projects.find(p => p._id === selectedProject)?.loomVideoUrl}
                 allowFullScreen
