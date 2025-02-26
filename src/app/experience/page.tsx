@@ -3,6 +3,7 @@ import Navbar from '../../components/navBar';
 import FlipCard, { CardContent } from '../../components/flipCard';
 import { getExperience } from "@/tools/DataManager";
 import { Experience } from "@/tools/data.model";
+import Footer from '@/components/footer';
 
 export default async function ExperiencePage() {
   const xpdata = await getExperience();
@@ -16,21 +17,21 @@ export default async function ExperiencePage() {
     if (exp.front === "Independent") {
       backContent = (
         <div className='m-4 text-xl'>
-          In the past year I developed two different sites using Google&apos;s CMS. 
+          In the past year I developed two different sites using Google&apos;s CMS.
           The first was on a volunteer basis for the{' '}
-          <a 
+          <a
             className='text-[#40F6FC] hover:text-[#B5EEF0] hover:shadow-[0_0_10px_2px_rgba(64, 246, 252, 0.8)] '
-            href="https://sites.google.com/view/ehcurlingassociation/home" 
-            target="_blank" 
+            href="https://sites.google.com/view/ehcurlingassociation/home"
+            target="_blank"
             rel="noopener noreferrer"
           >
             East Hants Curling Association
           </a>.{' '}
           {exp.back.join(' ').split('East Hants Curling Association')[1].split('Alaswinew.com')[0]}
-          <a 
+          <a
             className='text-[#40F6FC] hover:text-[#B5EEF0] hover:shadow-[0_0_10px_2px_rgba(64, 246, 252, 0.8)]'
-            href="https://www.alaswinew.com" 
-            target="_blank" 
+            href="https://www.alaswinew.com"
+            target="_blank"
             rel="noopener noreferrer"
           >
             Alaswinew.com
@@ -74,6 +75,9 @@ export default async function ExperiencePage() {
           )}
         </div>
       </div>
+
+      <Footer />
+
     </div>
   );
 }

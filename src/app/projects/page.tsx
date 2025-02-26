@@ -2,6 +2,7 @@ import { getExperience, getProjects } from "@/tools/DataManager";
 import Navbar from '../../components/navBar';
 import { Project } from "@/tools/data.model";
 import ProjectsDisplay from '../../components/projectsDisplay';
+import Footer from "@/components/footer";
 
 
 export default async function ProjectPage() {
@@ -18,10 +19,13 @@ export default async function ProjectPage() {
           <div className="relative text-4xl md:text-7xl hover-glow-title">PROJECTS</div>
         </div>
 
-        <ProjectsDisplay projects={projects}/>
+        <ProjectsDisplay projects={projects} />
       </div>
 
-      
+      <Footer />
+
+
+
     </div>
   );
 };

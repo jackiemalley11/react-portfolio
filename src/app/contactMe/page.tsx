@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useForm, SubmitHandler, FieldValues } from 'react-hook-form';
 import Navbar from '../../components/navBar';
 import ReCAPTCHAComponent from '@/components/ReCAPTCHAComponent';
+import Footer from '@/components/footer';
 
 interface ContactFormInputs {
   firstName: string;
@@ -44,7 +45,7 @@ export default function ContactMe() {
           name: `${data.firstName} ${data.lastName}`,
           email: data.email,
           message: data.message,
-          captcha: captchaToken, 
+          captcha: captchaToken,
         }),
       });
 
@@ -129,6 +130,9 @@ export default function ContactMe() {
             </button>
           </form>
         </div>
+
+        <Footer />
+
       </div>
     </div>
   );

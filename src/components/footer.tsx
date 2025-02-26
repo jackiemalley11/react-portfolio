@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full p-6 flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:space-x-6 gradient mt-auto">
+    <footer className="w-full p-6 flex items-center space-y-0 space-x-2 sm:space-x-6 gradient mt-auto">
    
       <a
         href="https://github.com/jackiemalley11" 
