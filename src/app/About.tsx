@@ -1,5 +1,5 @@
 "use client"
- import Image from 'next/image';
+import Image from 'next/image';
 
 
 import Navbar from "../components/navBar";
@@ -22,23 +22,23 @@ export default function About() {
                         <span className="animate-slideIn opacity-0 [animation-fill-mode:forwards] mr-2"> Thank you for dropping by!</span>
                     </div>
                 </div>
-                <div className='flex flex-col lg:flex-row ml-24'>
+                <div className='flex flex-col lg:flex-row ml-24 mr-24'>
                     <div className="flex-2 flex justify-start mt-10 lg:mt-20 ">
-                        I am currently a student in IT - Web Programming at NSCC&apos;s Truro campus and looking forward to graduating spring of 2025.
-                        I previously had a 14 year career  in the payroll industry where I held positions in customer serivce, programming and management.
+                        I am looking forward to be graduating from IT - Web Programming at NSCC&apos;s Truro campus spring of 2025.
+                        I previously had a 14 year professional career in the payroll industry where I held positions in customer serivce, programming and management.
                         I am a passionate lifelong learner who values diversity, creativity, and wellness in the workplace. I am delighted to be
-                        embarking into the exciting world of software-development.
+                        embarking into the exciting and creative world of software-development.
                         <br></br><br></br>
                         This portfolio is a small sampling of completed projects as well as work currently underway.
                         <br></br><br></br>
                         I&apos;d love to hear from you and learn what brought you to my page.
                     </div>
-                    <div className="mt-20 me-5">
+                    <div className="mt-16">
                         <Image
                             src="/images/FlowerHeadShot.png"
                             width={5000}
                             height={5000}
-                            className="w-1/2 lg:w-full"
+                            className="lg:w-full"
                             alt="Flower Head Shot"
                             style={{ height: 'auto' }}
                         />

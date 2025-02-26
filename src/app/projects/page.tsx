@@ -15,7 +15,7 @@ export default async function ProjectPage() {
         <Navbar />
 
         <div className="relative flex justify-center items-center mb-10 pt-48">
-          <div className="relative text-7xl hover-glow-title">PROJECTS</div>
+          <div className="relative text-6xl md:text-7xl hover-glow-title">PROJECTS</div>
         </div>
 
         <ProjectsDisplay projects={projects}/>

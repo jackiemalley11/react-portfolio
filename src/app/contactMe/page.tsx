@@ -68,7 +68,7 @@ export default function ContactMe() {
         <Navbar />
         <div className="container mx-auto px-4 py-8 mt-48">
           <div className="relative flex justify-center items-center mb-10">
-            <div className="relative text-7xl hover-glow-title">CONTACT ME</div>
+            <div className="relative text-5xl md:text-7xl hover-glow-title">CONTACT ME</div>
           </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -117,8 +117,9 @@ export default function ContactMe() {
               {errors.message && <p className="text-red-300">{errors.message.message}</p>}
             </div>
 
-            {/* ReCAPTCHA Component */}
-            <ReCAPTCHAComponent onChange={(value) => setCaptchaToken(value)} />
+            <div className='w-1/4 md:w-full'>
+              <ReCAPTCHAComponent onChange={(value) => setCaptchaToken(value)} />
+            </div>
 
             <button
               type="submit"
