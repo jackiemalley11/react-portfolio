@@ -4,10 +4,30 @@ import * as React from 'react';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+async function verifyCaptcha(captchaToken: string) {
+    const secret = process.env.RECAPTCHA_SECRET_KEY;
+  
+    const response = await fetch(
+      `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${captchaToken}`,
+      {
+        method: 'POST',
+      }
+    );
+  
+    const data = await response.json();
+    return data.success; // reCAPTCHA v2 only checks for success
+  }
+
 export async function POST(request: Request) {
   try {
     // Parse the incoming request body
     const { name, email, message, captcha } = await request.json();
+
+    const isCaptchaValid = await verifyCaptcha(captcha);
+    
+    if (!isCaptchaValid) {
+      return Response.json({ error: 'Invalid reCAPTCHA token' }, { status: 400 });
+    }
     
     
     // Send email with the form data

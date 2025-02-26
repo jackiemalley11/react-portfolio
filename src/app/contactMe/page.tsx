@@ -72,7 +72,7 @@ export default function ContactMe() {
           </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="max-w-xl mx-auto bg-blue rounded-lg shadow-lg p-14 gradient-border"
+            className="max-w-xl mx-auto bg-blue rounded-lg shadow-lg p-4 gradient-border"
           >
             <div className="mb-4">
               <label className="block mb-2">First Name</label>
