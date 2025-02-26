@@ -24,7 +24,7 @@ export default function About() {
                 </div>
                 <div className='flex flex-col lg:flex-row ml-24 mr-24'>
                     <div className="flex-2 flex justify-start mt-10 lg:mt-20 ">
-                        I am looking forward to be graduating from IT - Web Programming at NSCC&apos;s Truro campus spring of 2025.
+                        I am looking forward to graduating from IT - Web Programming at NSCC&apos;s Truro campus in spring of 2025.
                         I previously had a 14 year professional career in the payroll industry where I held positions in customer serivce, programming and management.
                         I am a passionate lifelong learner who values diversity, creativity, and wellness in the workplace. I am delighted to be
                         embarking into the exciting and creative world of software-development.
