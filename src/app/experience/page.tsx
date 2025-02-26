@@ -62,7 +62,7 @@ export default async function ExperiencePage() {
       <div className="flex flex-col">
         <Navbar />
         <div className="relative flex justify-center items-center mb-6 pt-32">
-          <div className="relative text-6xl md:text-7xl hover-glow-title">EXPERIENCE</div>
+          <div className="relative text-4xl sm:text-6xl md:text-7xl hover-glow-title">EXPERIENCE</div>
         </div>
         <div className="grid grid-cols-1 gap-4 px-6 w-full md:flex md:flex-row md:justify-evenly mt-10">
           {experiences && experiences.length > 0 ? (

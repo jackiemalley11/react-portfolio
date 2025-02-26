@@ -15,7 +15,7 @@ export default function About() {
 
             <div className="flex flex-col">
                 <div className="relative justify-center pt-32">
-                    <div className="relative text-3xl md:text-5xl lg:text-6xl hover-glow-title pl-20 pr-20 mt-3 flex flex-wrap ">
+                    <div className="relative text-3xl md:text-5xl lg:text-6xl hover-glow-title pl-10 pr-10 sm:pl-20 smpr-20 mt-3 flex flex-wrap ">
                         <span >Hi! I&apos;m &nbsp;</span>
                         <span className="gradient-text">Jackie </span>
                         <span className="inline-block">,  &nbsp;</span>

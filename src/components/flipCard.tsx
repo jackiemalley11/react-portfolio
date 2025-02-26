@@ -40,11 +40,11 @@ const FlipCard: React.FC<FlipCardProps> = ({ content }) => {
         <div
           className={`
             absolute w-full h-full backface-hidden flex items-center justify-center 
-            bg-bgBlue text-white text-2xl font-bold rounded-lg
+            bg-bgBlue text-white text-xl font-bold rounded-lg
             ${isFlipped ? 'hidden' : ''}
           `}
         >
-          <div className="text-4xl md:text-3xl lg:text-4xl text-center mb-2 mt-2">{content.front}</div>
+          <div className="text-2xl md:text-2xl lg:text-3xl text-center mb-2 mt-2">{content.front}</div>
         </div>
         
         {/* Back of card */}
