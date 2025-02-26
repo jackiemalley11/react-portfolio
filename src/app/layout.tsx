@@ -3,8 +3,8 @@ import Head from "next/head";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "boilerplate-nextjs-mongo",
-  description: "The boilerplate starting project folder for PROG3017",
+  title: "jackiemalley",
+  description: "Web Developer Portfolio",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
